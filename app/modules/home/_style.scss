@@ -1,0 +1,958 @@
+#mod-home{
+	padding-top: 70px;
+	h1{
+		@include font($fontB,38px,#00ab6b);
+		margin: 0;
+		line-height: 55px;
+	}
+	.h2Title{
+		@include font($fontSB,24px);
+		text-align: center;
+		margin-bottom:10px;
+	}
+	.h3Title{
+		@include font($fontSB,18px);
+	}
+	.new-button{
+		background-color: #d0021b;
+		@include font($fontSB,16px,white);
+		text-decoration: none;
+		border-radius: 3px;
+		padding: 15px 10px;
+		display: inline-block;
+		margin: 0 auto;
+		text-align: center;
+		min-width: 292px;
+	}
+	.trial-learn{
+		padding: 15px 10px;
+		margin-bottom: 45px;
+	}
+	#banner{
+		position:relative;
+		padding:100px 0 100px 25px;
+		@include sizeEx(100%,500px);
+		background: url(../images/New-Layout/background-home.jpg) center center no-repeat;
+		background-size: cover;
+		.container-fluid{
+			padding:0 ;
+		}
+		.with{
+			@include font($fontSB,24px,#496cb4);
+			margin-bottom: 20px;
+		}
+		.facebook{
+			margin-bottom: 55px;
+		}
+		.popup-youtube{
+			@include position(absolute,50%,25%);
+			margin-top: -40px;
+			margin-right: -40px;
+		}
+		.new-button{
+			margin: 0 25px 0 0;
+		}
+	}
+	#best-teacher{
+		margin-top: 50px;
+		padding: 40px 0 20px;
+		background-color: #f4f8f9;
+		.content-best-teacher{
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+		.teacher-list{
+			margin: 0 -15px;
+			list-style-type: none;
+			padding: 0;
+		}
+		.teacher-grid-list{
+			font-size: 0;
+		}
+		.teacher{
+			width: 20%;
+			cursor: pointer;
+			padding: 10px;
+			display: inline-block;
+			position: relative;
+		}
+		.image-arrow-teacher{
+			@include position(absolute,null,50%,-9px);
+			display: none;
+			margin-right: -20px;
+		}
+		.gridder-show{
+			float: left;
+			width: 100%;
+			padding: 0 10px;
+			@include position(relative);
+			margin-top: -1px;
+		}
+		.gridder-padding{
+			padding: 45px 10px 25px;
+			margin: 0 auto;
+			text-align: left;
+			background-color: #eee;
+			font-size: 14px;
+		}
+		.gridder-navigation{
+			@include position(relative);
+			margin: 0 auto;
+			max-width: 1000px;
+		}
+		.gridder-close{
+			background: url("../images/ic_close.png") no-repeat;
+			width: 16px;
+			height: 16px;
+			@include position(absolute,0, 0);
+		}
+		.gridder-expanded-content{
+			@include font($fontSB,null,#444);
+			margin: 0 auto;
+			max-width: 1000px;
+			ul{
+				display: inline-block;
+				margin-bottom: 0;
+				margin-right: 10px;
+			}
+			li{
+				padding: 0;
+				margin-right: -2px;
+			}
+			.name{
+				@include font($fontB,24px,null);
+				vertical-align: sub;
+				margin-right: 10px;
+			}
+			.score-content{
+				display: inline-block;
+			}
+			.score-text{
+				@include position(relative,2px);
+			}
+			.place{
+				margin-right: 20px;
+			}
+			.header{
+				padding-bottom: 10px;
+				border-bottom: 2px solid #e0e0e0;
+				margin-bottom: 20px;
+			}
+			.button-register-home{
+				margin-top: 20px;
+				a{
+					background: $color6;
+					border-radius: 3px;
+					@include font($fontSB,16px,white);
+					padding: 9px 18px;
+					text-decoration: none;
+					display: inline-block;
+				}
+			}
+		}
+		.image-teacher{
+			width: 100%;
+		}
+		.teacher-content{
+			@include position(relative);
+		}
+		.teacher-name{
+			@include font($fontB,22px,white);
+		}
+		.teacher-place{
+			@include font($fontSB,16px,null);
+		}
+		.teacher-score{
+			padding-left: 5px;
+			@include font($fontSB,16px,null);
+			ul{
+				display: inline-block;
+				margin-bottom: 0;
+			}
+			li{
+				padding: 0;
+				margin-right: -2px;
+			}
+		}
+		.info-teacher{
+			padding: 15px;
+			@include position(absolute,null,null,0);
+
+		}
+		.detail-teacher{
+			color: white;
+			background-color: rgba(0, 0, 0, 0.5);
+			@include position(absolute,null,null,0,null,1);
+			width: 100%;
+			height: 100%;
+		}
+	}
+	#learn-eng{
+		text-align:center;
+		padding: 20px 0 0;
+		.head-learn{
+			@include position(relative);
+			margin: 0 -15px;
+		}
+		.line-long{
+			height: 4px;
+			background-color: #d9dedf;
+			width: 100%;
+			@include position(absolute,null,null,11px,null);
+			z-index: -1;
+		}
+		.near{
+			width: 50%;
+		}
+		.left{
+			@include position(null,null,null,null,0);
+		}
+		.right{
+			@include position(null,null,0);
+		}
+		.learn{
+			float: left;
+			width: 20%;
+			padding:0 15px;
+			.icon{
+				height: 70px;
+				margin-bottom: 20px;
+				img{
+					height: 100%;
+				}
+			}
+			.h3Title{
+				text-transform: inherit;
+				@include font($fontSB);
+			}
+			p{
+				margin-top:20px;
+				padding:0 10px;
+			}
+			.row{
+				margin:0;
+			}
+			ul{
+				padding-left:10px;
+				list-style: none;
+				li{
+					text-align: left;
+					padding:0 10px;
+					margin-top: 10px;
+					background:url(../images/dot.png)no-repeat 2px 7px;
+					text-align: justify;
+				}
+			}
+		}
+		.list{
+			margin: 70px auto 0;
+			position:relative;
+			max-width: 1200px;
+			img{
+				margin:0 auto;
+			}
+			h3{
+				font-size: 16px;
+				line-height: 22px;
+				margin:15px 0;
+			}
+			p{
+				font-family: $fontSB;
+				line-height: 20px;
+				margin-top: 10px;
+				span{
+					&.bold{
+						font-family: $fontB;
+					}
+				}
+			}
+		}
+	}
+	#lesson-antoree{
+		padding: 50px 10px 0px;
+		text-align: center;
+		.video{
+			margin: 30px auto 50px;
+			max-width: 640px;
+		}
+		iframe{
+			width: 100%;
+			height: 360px;
+		}
+	}
+	#information{
+		background-color: #f2f2ee;
+		padding: 50px 0;
+		.head{
+			@include font($fontB,36px,$color7);
+			line-height: 44px;
+			margin-top: 10px;
+		}
+		.infor-text{
+			line-height: 24px;
+			@include font(null,18px,$color-text-1,400);
+		}
+		.information-image{
+			margin-right: 20px;
+		}
+		.information-list{
+			max-width: 1225px;
+			margin: 0 auto;
+		}
+	}
+	.student-say{
+		padding: 60px 0 0;
+		p{
+			margin: 0;
+		}
+		.h2Title{
+			text-align: center;
+			margin-bottom: 25px;
+		}
+		.text{
+			@include font($fontSBI);
+			margin-top: 20px;
+		}
+		.avatar{
+			img{
+				width: 70px;
+			}
+		}
+		.avatar-image{
+			padding: 0 20px 0 0;
+		}
+		.avatar-image,.avatar-detail{
+			display: table-cell;
+			vertical-align: top;
+		}
+		.name{
+			@include font($fontB,null,$color7);
+		}
+		.office{
+			@include font($fontR,null,#999999);
+		}
+		.comment-list{
+			padding: 30px;
+			max-width: 1255px;
+			margin: 0 auto;
+		}
+		.teacher{
+			border-left: 2px solid $color3;
+			padding-left: 10px;
+			margin-bottom: 50px;
+		}
+		.space{
+			height: 50px;
+		}
+		.green{
+			color: $color7;
+			text-decoration: none;
+		}
+		.margin-up{
+			margin-top: 50px;
+		}
+		.margin-down{
+			margin-top: -70px;
+		}
+	}
+	.discount-register{
+		margin-bottom: 50px;
+		.discount-text{
+			line-height: 32px;
+			@include font($fontB,22px,#d0021b);
+			margin-bottom: 25px;
+		}
+		.form-group{
+			max-width: 550px;
+			margin: 0 auto;
+			background-color: transparent;
+			.input-text{
+				width: 75%;
+				height: 50px;
+				border: none;
+				color: #999;
+				padding: 10px 20px;
+				border-radius: 4px 0 0 4px;
+				border: 1px solid #999;
+				border-right: none;
+			}
+			input[type='submit']{
+				width: 25%;
+				border: none;
+				border-radius: 0 4px 4px 0;
+				height: 50px;
+			}
+		}
+	}
+
+	#why{
+		text-align: center;
+		padding: 80px 0 0 0;
+		background-color: #f2f2ee;
+		.image-heart{
+			@include position(relative,-25px);
+		}
+		.learn{
+			float: left;
+			width: 20%;
+			.icon{
+				height: 30px;
+				img{
+					height: 100%;
+				}
+			}
+			.h3Title{
+				text-transform: inherit;
+			}
+			p{
+				margin-top:20px;
+				padding:0 10px;
+			}
+		}
+		.list{
+			margin-top: 70px;
+			position:relative;
+			.child-of-list{
+				padding:0 20px;
+			}
+			button{
+				&.slick-arrow{
+					top: 100px;
+					width: 40px;
+					height: 40px;
+					z-index: 10;
+					&:before{
+						content: '';
+					}
+				}
+				&.slick-prev{
+					left: -10%;
+					margin-left:40px;
+					background:url(../images/button-arrow-prev.png) left top no-repeat;
+				}
+				&.slick-next{
+					background:url(../images/button-arrow-next.png) left top no-repeat;
+					right: -10%;
+					margin-right:40px;
+				}
+			}
+			.line-long{
+				height: 2px;
+				background:#999;
+				width: 960px;
+				position:absolute;
+				top:94px;
+				left: 94px;
+				margin-left: -480px;
+			}
+			img{
+				margin:0 auto;
+			}
+			h3{
+				font-size: 18px;
+				line-height: 22px;
+				margin:15px 0;
+				height: 70px;
+			}
+			p{
+				font-family: $fontR;
+				line-height: 20px;
+				margin-top: 0;
+				text-align: justify;
+				span{
+					&.bold{
+						font-family: $fontB;
+					}
+				}
+			}
+		}
+	}
+	#media{
+		text-align:center;
+		padding: 100px 0 0;
+		.table{
+			max-width: 1225px;
+			width: 100%;
+			margin: 50px auto 70px;
+			a{
+				text-decoration: none;
+				display: inline-block;
+				margin: 0 55px 40px 0;
+			}
+		}
+		// .list{
+		// 	margin-top: 70px;
+		// 	.img{
+		// 		@include sizeEx(100%,81px);
+		// 		display: table;
+		// 		vertical-align: middle;
+		// 		p{
+		// 			margin:0px;
+		// 			display: table-cell;
+		// 			vertical-align: middle;
+		// 		}
+		// 	}
+		// 	img{
+		// 		margin:0 auto;
+		// 	}
+		// 	h3{
+		// 		font-size: 16px;
+		// 		line-height: 22px;
+		// 		margin:15px 0;
+		// 	}
+		// 	p{
+		// 		text-align: justify;
+		// 		line-height: 22px;
+		// 		@include font($fontBI,16px);
+		// 	}
+		// }
+	}
+	#clients{
+		margin-bottom: 50px;
+		.h2Title{
+			margin-bottom: 40px;
+		}
+		.table{
+			max-width: 1225px;
+			width: 100%;
+			margin: 0 auto 20px;
+			img{
+				margin: 0 20px 0 0;
+			}
+			a{
+				text-decoration: none;
+			}
+		}
+		.slick-next{
+			right: 0;
+		}
+	}
+	#register{
+		@include sizeEx(100%);
+		display:table;
+		text-align: center;
+		margin: 50px 0 75px;
+		.content{
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	#form-register{
+		background: url("../images/New-Layout/register-background.jpg") center center no-repeat;
+		background-size: cover;
+		padding: 50px 0;
+		.form{
+			background: transparent;
+			max-width: 350px;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0 10px;
+			h2.h4Title{
+				display: inline-block;
+				@include font($fontB,22px,#fff);
+				margin:0 0 15px;
+			}
+		}
+		.error-messages{
+			@include position(absolute,null,0px,-10px,null,1);
+			@include font(null,12px,red,null,italic);
+			background:#fff;
+			box-shadow:1px 1px 1px red;
+			padding:2px 6px;
+			border-radius: 3px;
+			display: none;
+			&.ng-active{
+				display: block;
+			}
+		}
+		form{
+			input{
+				&#btDangKyBanner{
+					margin-top: 15px;
+					height: 50px;
+				}
+				&.border-red{
+					box-shadow:0px 0px 2px 0px red;
+					border:1px solid red;
+				}
+			}
+		}
+
+		.btn-default{
+			background:#F9B000;
+			@include font($fontSB,18px,white);
+			height: 50px;
+			width: 100%;
+		}
+		p{
+			@include font(null,14px,#fff);
+			margin-bottom: 20px;
+		}
+		.form-group{
+			background: #fff;
+			border-radius: 3px;
+			position:relative;
+			margin-bottom:3px;
+			input{
+				background:none;
+				border:none;
+				box-shadow:none;
+				outline: none;
+				height: 40px;
+				margin-bottom: 10px;
+				@include font($fontR,14px,#999);
+				border-radius: 3px;
+				padding-left: 45px;
+				&#exampleInputText{
+					background:url(../images/home_form_ic_person.png)no-repeat 10px;
+				}
+				&#exampleInputSDT{
+					background:url(../images/home_form_ic_phone.png)no-repeat 10px;
+				}
+				&#exampleInputEmail{
+					background:url(../images/home_form_ic_mail.png)no-repeat 10px;
+				}
+			}
+		}
+		a{
+			display: block;
+			width: 100%;
+			font-size:15px;
+			margin-top: 15px;
+		}
+	}
+}
+
+@media only screen and(max-width:1023px){
+	#mod-home{
+		#learn-eng{
+			padding: 15px 0 0 0;
+			.line-long{
+				display: none;
+			}
+			.col-end{
+				margin-right:100%;
+			}
+			.learn{
+				width: 50%;
+				vertical-align: top;
+				margin-bottom: 20px;
+				img{
+					&.img-arrow{
+						display: none;
+					}
+				}
+			}
+		}
+		#media{
+			.list{
+				margin-top: 30px;
+			}
+		}
+		#register{
+			.content{
+				padding:0 20px;
+				.h1Title{
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1165px) {
+	#mod-home{
+		#best-teacher{
+			.info-teacher{
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media only screen and(max-width:991px){
+	#mod-home{
+		#why{
+			.list{
+				button{
+					&.slick-prev{
+						margin-left: 20px;
+						@include position(fixed);
+						opacity: 0;
+					}
+					&.slick-next{
+						margin-right: 20px;
+						@include position(fixed);
+						opacity: 0;
+					}
+				}
+			}
+		}
+		#imfomation-teacher{
+			.container{
+				.teacher{
+					.inner{
+						img{
+							width: unset;
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+			.two-child{
+				margin-top: 30px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 875px) {
+	#mod-home{
+		#best-teacher{
+			.teacher-name{
+				font-size: 16px;
+			}
+			.teacher-place, .teacher-score, .gridder-expanded-content{
+				font-size: 14px;
+			}
+			.info-teacher{
+				padding: 10px 5px;
+			}
+		}
+		#banner{
+			.popup-youtube{
+				display: none;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 845px) {
+	#mod-home{
+		.student-say{
+			.comment-list{
+				padding: 0;
+			}
+			.text{
+				max-width: 100%;
+			}
+			.margin-up,.margin-down{
+				margin-top: 0;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 835px) {
+	#mod-home{
+		#information{
+			.information-image{
+				float: none;
+				text-align: center;
+			}
+			.text-left{
+				text-align: center;
+			}
+		}
+	}
+}
+@media only screen and (max-width:767px){
+	#mod-home{
+		#banner{
+			background: url(../images/New-Layout/mobile_banner.jpg) center center no-repeat;
+			background-size: cover;
+		}
+		.h3Title{
+			font-size: 16px;
+		}
+		#learn-eng{
+			.list{
+				margin-top: 40px;
+			}
+		}
+		#why{
+			.list{
+				h3{
+					height: 60px;
+					font-size: 16px;
+				}
+				button{
+					&.slick-prev{
+						left: -2%;
+						margin-left:0;
+					}
+					&.slick-next{
+						right: -2%;
+						margin-right:0;
+					}
+				}
+			}
+			.slick-slide{
+				width: 359px;
+			}
+		}
+		#imfomation-teacher{
+			.container{
+				.teacher{
+					margin-top: 30px;
+					ul{
+						margin-top:20px; 
+					}
+					&:first-child{
+						margin-top: 0;
+					}
+					h2{
+						&.h2Title{
+							text-align: center;
+						}
+					}
+					.text{
+						height: 70px;
+					}
+				}
+			}
+		}
+		#register{
+			a{
+				&.bz-btn{
+					font-size: 16px;
+				}
+			}
+		}
+		#best-teacher{
+			.teacher{
+				width: 33.33%;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 660px) {
+	#mod-home{
+		h1{
+			font-size: 20px;
+			line-height: 30px;
+		}
+		#banner{
+			height: 400px;
+		}
+	}
+}
+@media only screen and(max-width:600px){
+	#mod-home{
+		.h3Title{
+			font-size: 16px;
+		}
+		#learn-eng{
+			.learn{
+				width: 100%;
+				margin-top: 10px;
+				margin-bottom:10px;
+			}
+		}
+		#register{
+			a{
+				font-size: 16px;
+			}
+		}
+		#why{
+			.list{
+				button{
+					&.slick-arrow{
+						top:45px;
+					}
+				}
+			}
+		}
+		.discount-register{
+			.form-group{
+				.input-text,input[type='submit']{
+					width: 100%;
+				}
+				.input-text{
+					border-radius: 4px 4px 0 0;
+					border-right: 1px solid #999;
+					border-bottom: none;
+				}
+				input[type='submit']{
+					border-radius: 0 0 4px 4px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 570px) {
+	#mod-home{
+		#why{
+			.image-heart{
+				top: 0px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 550px) {
+	#mod-home{
+		#banner{
+			.with{
+				font-size: 14px;
+			}
+		}
+		#best-teacher{
+			.teacher{
+				width: 50%;
+				padding: 5px;
+			}
+			.gridder-show{
+				padding: 0 5px;
+			}
+		}
+	}
+}
+@media only screen and(max-width:420px){
+	#mod-home{
+		#best-teacher{
+			.teacher-score{
+				li{
+					margin-right: -4px;
+					img{
+						width: 16px;
+					}
+				}
+				.score-text{
+					@include position(relative,2px,null,null,5px);
+				}
+			}
+			.score-content{
+				margin-right: 10px;
+			}
+		}
+		#banner{
+			.new-button{
+				padding: 15px 10px;
+			}
+		}
+		#imfomation-teacher{
+			.teacher{
+				.inner{
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+		.h2Title{
+			font-size: 18px;
+		}
+	}
+}
+
+@media only screen and(max-width:325px){
+	#mod-home{
+		#why{
+			.list{
+				.child-of-list{
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+}
