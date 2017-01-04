@@ -15,7 +15,6 @@
 <script src="scripts/utils/storage.js"></script>
 <script src="scripts/main.js"></script>
 <!-- Modules -->
-<script src="/modules/menu/script.js"></script>
 <script src="modules/home/script.js"></script>
 <!-- endbuild -->
 <!-- GA Tracking Code

@@ -22,10 +22,7 @@ Description: Combine multiple CSS into one
 @import "component/reskin";
 
 // Modules
-@import "../modules/menu/style";
 @import "../modules/home/style";
-@import "../modules/about/style";
-@import "../modules/contact/style";
 
 // Layout
 @import "layout/pagetransition";
