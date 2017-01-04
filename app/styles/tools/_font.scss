@@ -6,3 +6,13 @@ Description: Embed fonts
 //@include font-faceEx($fontI, "");
 //@include font-faceEx($fontL, "");
 //@include font-faceEx($fontM, "");
+@include font-faceEx($fontR, "OpenSans-Regular");
+@include font-faceEx($fontB, "OpenSans-Bold");
+@include font-faceEx($fontBI, "OpenSans-BoldItalic");
+@include font-faceEx($fontI, "OpenSans-Italic");
+@include font-faceEx($fontL, "OpenSans-Light");
+@include font-faceEx($fontLI, "OpenSans-LightItalic");
+@include font-faceEx($fontEB, "OpenSans-Extrabold");
+@include font-faceEx($fontEBI, "OpenSans-ExtraBoldItalic");
+@include font-faceEx($fontSBI, "OpenSans-SemiboldItalic");
+@include font-faceEx($fontSB, "OpenSans-Semibold");

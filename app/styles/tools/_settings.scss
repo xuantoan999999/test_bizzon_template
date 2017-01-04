@@ -9,12 +9,27 @@ $tablet-width: 					768px;
 $desktop-width: 				1024px;
 
 /* Fonts */
-$fontR:							Arial;
-$fontB:							"fontB";
-$fontI:							"fontI";
-$fontL:							"fontL";
+$fontR:							"OpenSans-Regular";
+$fontL:							"OpenSans-Light";
+$fontLI:						"OpenSans-LightItalic";
 $fontM:							"fontM";
-
+$fontB:							"OpenSans-Bold";
+$fontI:							"OpenSans-Italic";
+$fontBI:						"OpenSans-BoldItalic";
+$fontEB:						"OpenSans-Extrabold";
+$fontEBI:						"OpenSans-ExtraBoldItalic";
+$fontSBI:						"OpenSans-SemiboldItalic";
+$fontSB:						"OpenSans-Semibold";
+/* Color Guide */
+$color1:						#00B5AC;
+$color2:						#0BC7B4;
+$color3:						#00AB6B;
+$color4:						#A0E3E0;
+$color5:						#C7EFED;
+$color6:						#00AB6B;// for background
+$color7:						#009A5F;// for text
+$color-text-1:					#384047;
+$color-orange:					#f5a623;
 /****************************************************************************************
 Description: Bootstrap variables
 *****************************************************************************************/
@@ -48,7 +63,7 @@ $brand-danger:          #d9534f;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            #67788a;
+$text-color:            $gray-dark;
 
 //** Global textual link color.
 $link-color:            darken($brand-primary, 10%) !default;
