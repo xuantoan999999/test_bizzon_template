@@ -1,0 +1,43 @@
+Cấu trúc thư mục
+
+- app
+  - angularjs - Dự án AngularJs, Hybrid App
+  - data - Chứa hình ảnh, dữ liệu demo cho website
+  - fonts - Chứa các font được sử dụng trong dự án
+  - images
+    - generated - Chứa sprites (Kỹ thuật tăng hiệu suất tải trang)
+    - icons - Chứa các icons để tạo sprites
+  - modules - Chứa các module của website, dùng include để nhúng vào html, dành cho dự án thường. Mỗi module bao gồm view.tpl,_style.scss, script.js
+  - scripts
+    - libs - Chứa các thư viện khác không có trên GIT
+    - languages.js - Dữ liệu đa ngôn ngữ
+    - main.js - Khai báo các đoạn script dùng chung của tất cả các trang
+    - variables.js - Cấu hình website
+  - styles
+    - base
+      - _base.scss - Style các thẻ html
+      - _form.scss - Style các thẻ form và input
+    - component
+      - _accordion.scss - Style các kiểu popup
+      - _customform.scss - Style radio, checkbox
+      - _loading.scss - Style các trạng thái loading
+      - _message.scss - Style các thông báo (Lỗi, thành công...)
+      - _pagination.scss - Style phân trang
+      - _popup.scss - Style các loại popup
+      - _tab.scss - Style tab
+    - layout
+      - _layout.scss - Style bố cục trang web và những thành phần chung
+    - tools
+      - _animation.scss - Hiệu ứng chuyển trang, chuyển động dùng CSS3
+      - _font.scss - Đăng ký các font được sử dụng trong dự án
+      - _helpers.scss - Các class được style sẵn
+      - _mixins.scss - Các hàm rút gọn code css
+      - _settings.scss - Khai báo biến sử dụng trong Sass
+      - _responsive.scss - Responsive cho class .container
+      - _settings.scss - Các biến cấu hình cho SASS
+  - bower_components - Chứa các thư viện được dùng trong dự án (đi kèm với bower.json)
+  - dist - Thư mục html Back-End sẽ làm việc
+  - node_modules - Các node module được sử dụng trong dự án (đi kèm với package.json)
+- .gitignore - Các tập tin và thư mục sẽ không được Push lên GIT
+- bower.json - Chứa các thư viện được dùng trong dự án (đi kèm với bower_components)
+- package.json - Các module được sử dụng trong dự án (đi kèm với node_modules)
