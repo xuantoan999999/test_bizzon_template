@@ -1,8 +1,0 @@
-Gulp
-
-gulp serve - Môi trường viết code
-gulp build - Biên dịch (Backend sẽ làm việc dựa trên bản biên dịch này)
-gulp installAngular - Gỡ  thư viện Angular
-gulp uniAngular - Gỡ  thư viện Angular
-gulp templateNormal - Chuyển template angular đang có sẵn về template thường
-gulp wiredep - Cập nhật danh sách các thư viện JS được dùng trong dự án, Lệnh này sẽ tự động chạy khi đã chạy sẵn lệnh gulp serve.

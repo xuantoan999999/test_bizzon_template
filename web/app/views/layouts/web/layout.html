@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{meta.title}}</title>
+    <meta name="title" content="{{meta.title}}">
+    <meta name="description" content="{{meta.description}}">
+    <meta charset="utf-8">
+    <link type="image/x-icon" href="/assets/images/favicon.ico" rel="icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>document.write('<base href="' + document.location.origin + '" />');</script>
+    <script>
+        var settings={{{json settings}}};
+        var facebookConfig = {
+            appId: '{{facebookConfig.clientID}}',
+            permissions: '{{facebookConfig.permissions}}',
+            version: '{{facebookConfig.version}}',
+            cookie: '{{facebookConfig.cookie}}',
+            xfbml: '{{facebookConfig.xfbml}}',
+            callbackURL: '{{facebookConfig.callbackURL}}',
+        };
+    </script>
+    {{#each assets.css}}
+    <link rel="stylesheet" href="{{this}}" />
+    {{/each}}
+</head>
+<body class="{{pageClass}}">
+    {{{ content }}}
+    {{> web/partials/footer}}
+
+</body>
+
+</html>

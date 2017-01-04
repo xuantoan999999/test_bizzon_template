@@ -1,0 +1,21 @@
+<div id="mod-footer">
+    <div class="sp2">
+        <img src="assets/frontend/images/img-sp2.png" class="img-responsive" alt="">
+    </div>
+    <div class="sp">
+        <img src="assets/frontend/images/img_sp.png" class="img-responsive" alt="">
+    </div>
+    <div class="img">
+        <a href="">
+            <img src="assets/frontend/images/logo.png" class="img-responsive" alt="">
+        </a>
+    </div>
+</div>
+
+
+{{#if isDevelopment}}
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+{{/if}}
+{{#each assets.js}}
+<script src="{{this}}"></script>
+{{/each}}

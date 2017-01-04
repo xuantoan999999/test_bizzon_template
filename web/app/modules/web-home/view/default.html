@@ -1,0 +1,47 @@
+<div id="mod-register" ng-controller="homeCtrl as home">
+	<div class="header">
+		<img src="assets/frontend/images/bla.png" alt="" class="img-responsive bla">
+		<img src="assets/frontend/images/ai.png" alt="" class="img-responsive ai">
+		<img src="assets/frontend/images/hoi.png" alt="" class="img-responsive hoi">
+		<img src="assets/frontend/images/ttl.png" alt="" class="img-responsive ttl">
+		<img src="assets/frontend/images/tia.png" alt="" class="img-responsive tia">
+	</div>
+	<div class="boy">
+		<img src="assets/frontend/images/betrai.png">
+	</div>
+	<div class="girl">
+		<img src="assets/frontend/images/begai.png">
+	</div>
+	<div class="register">
+		<div class="title">
+			<p>
+				Mẹ hãy nhập thông tin bé vào bên dưới nhé:	
+			</p>
+		</div>
+		<div class="form-register">
+			<form>
+				<div class="form-group">
+					<label for="name" class="name">Tên bé</label>
+					<div class="text">
+						<input type="text" class="form-control" id="name" ng-model="home.formData.name">
+					</div>
+				</div>
+				<div class="form-group date">
+					<label for="day">NGÀY /</label>
+					<input type="number" class="form-control" id="day" placeholder="DD" ng-model="home.formData.day">
+				</div>
+				<div class="form-group date">
+					<label for="month">THÁNG/</label>
+					<input type="number" class="form-control" id="month" placeholder="MM" ng-model="home.formData.month">
+				</div>
+				<div class="form-group date">
+					<label for="year">NĂM SINH</label>
+					<input type="number" class="form-control" id="year" placeholder="YYYY" ng-model="home.formData.year">
+				</div>
+				<div class="result">
+					<a ng-click="home.submit()">XEM KẾT QUẢ</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
