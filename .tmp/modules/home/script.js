@@ -85,12 +85,13 @@
 		})
 	}
 	$(document).ready(function() {
-		TheBestAntoree();
+		// TheBestAntoree();
 		// slideClient();
-		popupBanner();
-		popupAds();
-		bestTeacher();
-		maxHeigthLearn();
+		// popupBanner();
+		// popupAds();
+		// bestTeacher();
+		// maxHeigthLearn();
+		console.log("kgnsdkg");
 		// slideMedia();
 		// requiredSafari();
 	});

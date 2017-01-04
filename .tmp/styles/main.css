@@ -1813,6 +1813,7 @@ Description: jQuery Datepicker
 
 #mod-home #form-register .btn-default {
   background: #F9B000;
+  border: none;
   font-family: "OpenSans-Semibold";
   font-size: 18px;
   color: white;

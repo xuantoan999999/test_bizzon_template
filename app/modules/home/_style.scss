@@ -581,6 +581,7 @@
 
 		.btn-default{
 			background:#F9B000;
+			border: none;
 			@include font($fontSB,18px,white);
 			height: 50px;
 			width: 100%;
